@@ -7,12 +7,15 @@
     left: 0;
     width: 107px;
     background: rgb(83, 82, 82);
-    height: calc(50px - 0.5px);
+    height: calc(50px - 1.5px);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    border-top-left-radius: 10px;
 }
 #tbar {
+    border-top-right-radius: 10px;
+
     width: calc(100vw - 107px);
     height: calc(50px - 0.5px);
 
@@ -35,8 +38,11 @@
     user-select: none;
 }
 #body {
-    height: calc(100vh - 50px);
-    width: 100vw;
+    height: calc(100vh - 51px);
+    margin-top: -1px;
+    border: 1px solid #333;
+    border-top: none;
+    width: calc(100vw - 2px);
     background: #fff;
     overflow: auto;
 }
